@@ -1,0 +1,71 @@
+<section class="wrapper header-margin-double" style="padding-top: 0px !important;">
+	<div class="inner">
+			
+			
+		<div class="inner">
+			<div class="row uniform">
+				<br>
+				<div class="6u -3u 12u$(medium) 12u$(xsmall)" ng-hide="login_page">
+						<h2>
+								<i class="material-icons">perm_identity</i> Login</h2>
+								<hr>
+					<form id="Login">
+						<div class="row uniform">
+							<div class="12u 12u$(xsmall)">
+								<h6>Email / Contact</h6>
+								<input type="text" name="email" ng-model="email" id="email" value="" placeholder="Enter email" />
+							</div>
+							<div class="12u 12u$(xsmall)">
+								<h6>Password</h6>
+								<input type="password" name="password" ng-model="password" id="password" value="" placeholder="Enter password" />
+							</div>
+						</div>
+						<div class="12u 12u$(xsmall)">
+							<a style="float:right;text-decoration: none;" ng-click="toggle_page()" href="">Forgot Password</a>
+							<br>
+							<br>
+							<center>
+								<ul class="actions">
+									<li>
+										<input type="hidden" name="login" value="true">
+										<input type="submit" class="button" name="login_button" value="Login" style="color: white !important;background-color:rgb(155,0,50);"
+										/>
+									</li>
+								</ul>
+							</center>
+						</div>
+					</form>
+				</div>
+				<div class="6u -3u 12u$(medium) 12u$(xsmall)" ng-hide="forgot_password">
+					<a href="" style="float:right;" ng-click="toggle_page1()">
+						<i class="material-icons" style="color: rgb(155,0,50);">close</i>Close 
+					</a>
+					<h2>
+							<i class="material-icons">lock_outline</i> Forgot Password</h2>
+							<hr>
+					<form id="ForgotPassword">
+						<div class="row uniform">
+							<div class="12u 12u$(xsmall)">
+								<h6>Email</h6>
+								<input type="text" name="email" ng-model="email" id="email" value="" placeholder="Enter email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required/>
+							</div>
+						</div>
+						<div class="12u 12u$(xsmall)">
+							<br>
+							<center>
+								<ul class="actions">
+									<li>
+										<input type="hidden" name="forgot_password" value="true">
+										<input type="submit" class="button" name="login_button" value="Send Password" style="color: white !important;background-color:rgb(0,0,128);"
+										/>
+									</li>
+								</ul>
+							</center>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</section>

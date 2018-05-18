@@ -1,0 +1,246 @@
+<section class="wrapper" id="StudentHome">
+    <!--<div class="inner">-->
+    <div class="row uniform" ng-hide="add_project_div">
+                    
+         <div class="10u -1u 12u$(xsmall)">
+            <div class="row uniform">
+                <div class="12u 12u$(xsmall)" id="addButton">
+				
+					
+                    <h4>
+                        <center>
+                            <a style="color:#3b5998;" href="#/Student/Project">
+                                <i class="material-icons" style="font-size:2em !important;">add_circle_outline</i>
+                                <br> click here to add your project</a>
+								<h6> Click Here to download
+								<a href="pdf/template Content.pdf" style="color:rgb(155,0,50);" target="_BLANK"> Project Report Sample pdf file format</a> </h6>
+                        </center>
+                    </h4>
+					
+                </div>
+                <!--
+                <div class="2u 12u$(xsmall)">
+                    <img src="images/l j innovation village   logo_final.png" style="height:5rem;height:5rem;float:left;">
+                </div>
+				
+				
+                <div class="8u 12u$(xsmall)">
+                    <center>
+                        <h6>This is a Sample Template for your project</h6>
+                        <h3>[T001] - LJ Innovation Village
+                            </h4>
+                            <h4>IT - MCA</h4>
+                    </center>
+                </div>
+				
+                <div class="2u 12u$(xsmall)">
+                    <img src="images/LJ Knowledge Foundation.png" style="height:5rem;height:5rem;float:right;">
+                </div>
+				
+                <div class="12u 12u$(xsmall)">
+                    <center>LJ Institute of Computer Application - Ahmedabad</center>
+                    <hr>
+                    <div class="row uniform">
+                        <div class="5u 12u$(xsmall)">
+                            <img src="images/LJ Handicare.png" width="100%" height="200px">
+                        </div>
+                        <div class="7u 12u$(xsmall)">
+                            Team Members (3)
+                            <h6>Mark Herris, Steve Smith, John Smith</h6>
+                            <hr> Guide Name
+
+                            <h6>Nicole Herris</h6>
+                            <hr> Co-Guide Name
+                            <h6>Steve Jobs</h6>
+                            <hr>
+                        </div>
+                        <div class="12u 12u$(xsmall)">
+                            <h3>Uniqueness - Product[category]</h3>
+                            <hr>
+                            <div id="justify">
+                                <p>
+                                    This is my Unique Project. "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
+                                    vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                                    odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+                                    nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                                    adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
+                                    aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                                    corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel
+                                    eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+                                    vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				-->
+            </div>
+        </div>
+    </div>
+    <div class="row uniform" ng-hide="edit_project_div">
+        <div class="10u -1u 12u$(xsmall)">
+            <div class="row uniform" style="margin-top:-3em;">
+                <div class="12u  buttons" style="position:fixed;width:75%;height:20%;background-color:white;">
+                    <button class="round-button" onclick="window.print();">
+                        <i class="material-icons">print</i>
+                    </button>
+                    <!-- <button class="round-button">
+                        <a href="#/Student/EditProject">
+                            <i class="material-icons">edit</i>
+                        </a>
+                    </button> 
+					-->
+                </div>
+                <div class="12u 12u$(xsmall)">
+                    <center>
+                        <img src="images/4.png" style="height:5rem;">
+                    </center>
+                </div>
+                <div class="12u 12u$(xsmall)">
+                    <table>
+                        <tr>
+                            <td> Project ID </td>
+                            <td>{{project.group_id}}</td>
+                        </tr>
+                        <tr>
+                            <td> Project Title </td>
+                            <td>{{project.project_title}}</td>
+                        </tr>
+                        <tr>
+                            <td> Stream </td>
+                            <td>{{project.stream_name}}</td>
+                        </tr>
+                        <tr>
+                            <td> Branch </td>
+                            <td>{{project.branch_name}} </td>
+                        </tr>
+                        <tr>
+                            <td> Institute / Organization Name </td>
+                            <td>{{project.institute_name}} </td>
+                        </tr>
+                        <tr>
+                            <td> City & State </td>
+                            <td>{{project.institute_city}} - {{project.institute_state}} </td>
+                        </tr>
+                        <!-- 	</table>
+				</div>
+				<div class="12u 12u$(xsmall)">
+					<div class="6u 12u$(xsmall)">
+						         <center>
+                                    <img ng-src="images/project/{{project.project_id}}/{{project.project_image}}" width="40%">
+                                    <br>
+                                 </center>
+                       
+					</div>
+					<div class="6u 12u$(xsmall)"> 
+					
+							<table>-->
+                        <tr>
+                            <td rowspan="6" style="max-width:450px;">
+                                <img ng-src="images/project/{{project.project_id}}/{{project.project_image}}" width="100%">
+                            </td>
+                            <td> Team Members :({{project.team_size}}) </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                {{ project.team_member_names }}
+                                <!-- <span ng-repeat="ele in project.team_member_names.split(',')">
+                                    {{ele}},
+                                </span> -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> Team Leader's Email Address : {{project.email}} </td>
+                        </tr>
+                        <tr>
+                            <td> Team Leader's Contact : {{project.contact}} </td>
+                        </tr>
+                        <tr>
+                            <td> Guide Name :
+                                <span>{{project.guide_name?project.guide_name:"-"}}</span>
+                            </td>
+                            <!--  setdashName({{project.guide_name}}) </td>  -->
+                        </tr>
+                        <tr>
+                            <td> Co-Guide Name :
+                                <span>{{project.co_guide_name?project.co_guide_name:"-"}}</span>
+                            </td>
+                        </tr>
+
+                        <!-- </table>
+					</div>
+				</div> 
+				<div class="12u 12u$(xsmall)">
+					<table> -->
+                        <tr id="no-break">
+                            <td colspan="2">
+                                <h4 style="color:black !important;">Abstract of the project/innovation</h4>
+                                <p>{{project.project_abstract}}</p>
+                            </td>
+                        </tr>
+                        <tr id="no-break">
+                            <td colspan="2">
+                                <h4 style="color:black !important;">Uniqueness/Novelty of the project </h4>
+                                <p>{{project.project_uniqueness}}
+                                </p>
+                            </td>
+                        </tr>
+                        <tr id="no-break">
+                            <td colspan="2">
+                                <h4 style="color:black !important;">What exact problem your innovation is solved?</h4>
+                                <p>{{project.project_problem_definition}}
+                                </p>
+                            </td>
+                        </tr>
+
+                        <tr id="no-break">
+                            <td colspan="2">
+                                <h4 style="color:black !important;">Market Potential and Competitive Advantage of the project</h4>
+                                <p>{{project.project_market_potential}}
+                                </p>
+                            </td>
+                        </tr>
+                        <tr id="no-break">
+                            <td colspan="2">
+                                <h4 style="color:black !important;">Potential Impact of the solution</h4>
+                                <p>{{project.project_potential_impact}}
+                                </p>
+                            </td>
+                        </tr>
+                        <tr id="no-break">
+                            <td colspan="2">
+                                <h4 style="color:black !important;">Scope , Design and Resource Requirement to make project to a product/solution</h4>
+                                <p>{{project.porject_scope_resource_requirement}}
+                                </p>
+                            </td>
+                        </tr>
+                        <tr id="no-break">
+                            <td colspan="2">
+                                <h4 style="color:black !important;">Background of Innovation or Prior Art</h4>
+                                <p>{{project.background_of_inventor}}
+                                </p>
+                            </td>
+                        </tr>
+                        <tr id="no-break">
+                            <td colspan="2">
+                                <h4 style="color:black !important;">Video Link
+                                    <a href={{project.project_video}}  target="_blank" > (Click Here) </a>
+                                </h4>
+                            </td>
+                        </tr>
+						<tr id="no-break">
+                            <td colspan="2">
+                                <h4 style="color:black !important;">Download Report File 
+                                   				<a href="images/project/{{project.project_id}}/{{project.project_report_file}}" target="_BLANK">
+												Documentation</a>
+                                </h4>
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

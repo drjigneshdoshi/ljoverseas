@@ -1,0 +1,65 @@
+<div class="row uniform" class="header-margin-double">
+    <div class="8u -2u 12u(xsmall)">
+        <div class="row uniform">
+            <div class="2u 12u(medium) 12u(small) 12u(xsmall)">
+                <br>
+                <table style="margin-top:0.2em;" id="menu-table">
+                    <tr>
+                        <td>
+                            <a href="#Images" class="links" style="color: rgb(155,0,50);">Images</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#Videos" class="links" style="color: rgb(155,0,50);">Videos</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#Media" class="links" style="color: rgb(155,0,50);">Media</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="10u 12u(medium) 12u(small) 12u(xsmall)" style="border-left:1px solid lightgrey;">
+                <br>
+                <br>
+                <span>
+                    <h2 style="text-align:center">LJ Innovation Village - {{year}}</h2>
+                    <div id="justify">
+                    <p>
+                        {{summary}}
+                    </p><hr>
+                </div>
+                    <div class="row uniform" ng-hide="all_images_page">
+                        <div class="2u 12u(xsmall)" ng-repeat="ele in images11">
+                            <a href="" ng-click="show_image(ele)">
+                                <img ng-src='images/gallery/LJ Innovation Village-{{year}}/thumbnails/Slide{{ele}}.JPG' style='width:100%'
+                                    class='hover-shadow cursor'>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row uniform" ng-hide="current_image_page">
+                        <div class="-1u 10u 12u(xsmall)">
+                            <a href="" ng-click="show_album()">
+                                <i class="material-icons" style="float:right;">close</i>
+                            </a>
+                            <center>
+                                <img ng-src='images/gallery/LJ Innovation Village-{{year}}/Slide{{current_image}}.JPG' style='width:70%;' class='hover-shadow cursor'>
+                                <br>
+                                <br>
+                                <a href="" ng-click="previous()">
+                                    <i class="material-icons">navigate_before</i>
+                                </a>
+                                &nbsp;&nbsp;
+                                <a href="" ng-click="next()">
+                                    <i class="material-icons">navigate_next</i>
+                                </a>
+                            </center>
+                        </div>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

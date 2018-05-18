@@ -1,0 +1,64 @@
+<div class="row uniform" class="header-margin-double">
+    <div class="8u -2u 12u(xsmall)">
+        <div class="row uniform">
+            <div class="2u 12u(medium) 12u(small) 12u(xsmall)">
+                <br>
+                <table style="margin-top:0.2em;" id="menu-table">
+                    <tr>
+                        <td>
+                            <a href="" ng-click="schedule1_toggle()" class="links" style="color: rgb(155,0,50);">Schedule</a>
+                        </td>
+                    </tr>
+                    <!-- <tr>
+                <td>
+                    <a href="" ng-click="schedule2_toggle()" class="links">Schedule-2</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="" ng-click="schedule_toggle()" class="links">Schedule-3</a>
+                </td>
+            </tr> -->
+                </table>
+            </div>
+            <div class="10u 12u(medium) 12u(small) 12u(xsmall)" style="border-left:1px solid lightgrey;border-right:1px solid lightgrey;">
+                <br>
+                <span ng-hide="schedule1_page">
+                    <h2 style="color: rgb(155,0,50);;margin-left:2em;">
+                        <i class="material-icons">timer</i> Schedule</h2>
+                    <hr>
+                    <div class="row uniform">
+                        <div class="10u -1u 12u$(xsmall)">
+                            <table>
+                                <tr>
+                                    <th>
+                                        No.
+                                    </th>
+                                    <th>
+											Description 
+										<!-- File Name (Click to View file) -->
+                                    </th>
+                                </tr>
+                                <tr ng-repeat="ele in schedules">
+                                    <td>
+                                        {{$index+1}}.
+                                    </td>
+                                    <td>
+                                       <!--  <a href="{{ele.url}}" target="_BLANK">{{ele.name}}</a> -->
+									   {{ele.name}}
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </span>
+                <span ng-hide="schedule2_page">
+                    <br>
+                </span>
+                <span ng-hide="schedule3_page">
+                    <br>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

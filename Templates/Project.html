@@ -1,0 +1,223 @@
+<div class="row uniform" class="header-margin-double">
+    <div class="8u -2u 12u(xsmall)">
+        <div class="row uniform">
+            <div class="3u 12u(medium) 12u(small) 12u(xsmall)">
+                <br>
+                <table style="margin-top:0.2em;" id="menu-table">
+                    <tr>
+                        <td>
+                            <a href="" ng-click="selctedFilter('','')" class="links" style="color: rgb(155,0,50);">Projects Registered</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="" ng-click="selctedFilter('Prototype',1)" class="links" style="color: rgb(155,0,50);">Scrutinized Projects for Prototype</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="" ng-click="selctedFilter('Product',1)" class="links" style="color: rgb(155,0,50);">Scrutinized Projects for Products</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="" ng-click="selctedFilter('Startup',1)" class="links" style="color: rgb(155,0,50);">Scrutinized Projects for Startups</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="9u 12u(medium) 12u(small) 12u(xsmall)" style="border-left:1px solid lightgrey;border-right:1px solid lightgrey;"
+                ng-hide="project_table">
+                <br>
+                <!-- <h2 style="color: rgb(155,0,50);margin-left:2em;">
+                <i class="material-icons" style="color: rgb(155,0,50);">camera_enhance</i> LJ Innovation Village 2018</h2>
+            <hr>
+            <div class="row uniform">
+
+
+
+                <div class="col-md-4">
+                    <div class="spp-stats">
+                        <div>
+                            <span class="bgclr1">1234</span>
+                            <span>
+                                <BR> Projects Registered</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="spp-stats">
+
+                        <div>
+                            <span class="bgclr2">2824</span>
+                            <span>
+                                <BR> Students Participated</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="spp-stats">
+
+                        <div>
+                            <span class="bgclr3">21</span>
+                            <span>
+                                <BR> States Participated</span>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- <h2 style="color: rgb(155,0,50);margin-left:2em;">
+                        <i class="material-icons" style="color: rgb(155,0,50);">important_devices</i> {{category}}</h2>
+                    <hr>
+
+                    <table class="table-wrapper">
+                        <thead>
+                            <tr>
+                                <th width="15">
+                                    No.
+                                </th>
+                                <th>
+                                    Project Details(Click to Explore)
+                                </th>
+                                <th>
+                                    Stream
+                                </th>
+                                <th>
+                                        Branch
+                                    </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="project in projects | filter:{ project_category: category_selected, project_selected: selected} | orderBy:'-average_rating'">
+                                <td>
+                                    <b>{{$index+1}}.</b>
+                                </td>
+                                <td>
+                                    <b>
+                                        <a href="" ng-click="open_project(project.project_id)">
+                                            <b style="color:rgb(155,0,50);">{{project.project_title}}</b>
+                                        </a>
+                                    </b>
+                                </td>
+                                <td>
+                                   {{project.stream_name}}
+                                </td>
+                                <td>
+                                    {{project.branch_name}}
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table> -->
+                <center>
+                    <h2>LJ Innovation Village - 2018</h2>
+                    <div id="pieChart">
+
+                    </div>
+                </center>
+            </div>
+            <div class="9u 12u$(xsmall)" ng-hide="project_details">
+                <div style="margin:2em;">
+                    <br>
+                    <a href="" style="float:right;" ng-click="show_project_table()">
+                        <i class="material-icons" style="color: rgb(155,0,50);">assignment_return</i>Back
+                    </a>
+                    <a href="images/project/{{projects[selected_project].project_id}}/{{projects[selected_project].project_image}}" target="_BLANK">
+                        <img ng-src="images/project/{{projects[selected_project].project_id}}/{{projects[selected_project].project_image}}" height="100">
+                    </a>
+                    <h1>
+                        <span style="vertical-align:top;">{{projects[selected_project].project_title}}</span>
+                    </h1>
+                    <h4>
+                        {{projects[selected_project].project_category}} - {{projects[selected_project].stream_name}} - {{projects[selected_project].branch_name}}
+                    </h4>
+                    <p>{{projects[selected_project].institute_name}} - {{projects[selected_project].institute_state}} - {{projects[selected_project].institute_city}}
+                    </p>
+                    <h5>
+                        <a href="images/project/{{projects[selected_project].project_id}}/{{projects[selected_project].project_report_file}}" target="_BLANK">Documentation</a>
+                        <a href="{{projects[selected_project].project_video}}" target="_BLANK">Video Link</a>
+                    </h5>
+                    <hr>
+                    <h3>Abstract of the project/innovation</h3>
+                    <p>{{projects[selected_project].project_abstract}}
+                    </p>
+                    <h3>Uniqueness/Novelty of the project </h3>
+                    <p>{{projects[selected_project].project_uniqueness}}
+                    </p>
+                    <h3>What exact problem your innovation is solved?</h3>
+                    <p>{{projects[selected_project].project_problem_definition}}
+                    </p>
+                    <h3>Market Potential and Competitive Advantage of the project?</h3>
+                    <p>{{projects[selected_project].project_market_potential}}
+                    </p>
+                    <h3>Potential Impact of the solution</h3>
+                    <p>{{projects[selected_project].project_potential_impact}}
+                    </p>
+                    <h3>Scope , Design and Resource Requirement to make project to a product/solution</h3>
+                    <p>{{projects[selected_project].porject_scope_resource_requirement}}
+                    </p>
+                    <h3>Background of innovation or prior art</h3>
+                    <p>{{projects[selected_project].background_of_inventor}}
+                    </p>
+                    <!-- <h3>Guide Details</h3>
+                        <table>
+                            <tr>
+                                <th>
+        
+                                </th>
+                                <th>
+                                    <h5>Guide Details</h5>
+                                </th>
+                                <th>
+                                    <h5>Co-Guide Details</h5>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h5>Name:</h5>
+                                </td>
+                                <td>
+                                    <p>{{projects[selected_project].guide_name}}</p>
+                                </td>
+                                <td>
+                                    <p>{{projects[selected_project].co_guide_name}}</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h5>Contact:</h5>
+                                </td>
+                                <td>
+                                    <p>{{projects[selected_project].guide_contact}}</p>
+                                </td>
+                                <td>
+                                    <p>{{projects[selected_project].co_guide_contact}}</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h5>Email:</h5>
+                                </td>
+                                <td>
+                                    <p>{{projects[selected_project].guide_email}}</p>
+                                </td>
+                                <td>
+                                    <p>{{projects[selected_project].co_guide_email}}</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h5>Team Members:</h5>
+                                </td>
+                                <td colspan="2">
+                                    <p>{{projects[selected_project].team_member_names}}</p>
+                                </td>
+                            </tr>
+                        </table> -->
+                </div>
+            </div>
+            </span>
+        </div>
+    </div>
+</div>
+</div>

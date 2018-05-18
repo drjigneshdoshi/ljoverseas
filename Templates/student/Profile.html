@@ -1,0 +1,91 @@
+<section class="wrapper header-margin-double" style="padding-top: 0px !important;">
+        <div class="inner">
+					<a href="" style="float:right;" ng-click="toggle_back()">
+						<i class="material-icons" style="color: rgb(155,0,50);">close</i>Close 
+					</a>
+            <br>
+            <h2 style="color: #3b5998;">
+                <i class="material-icons">account_circle</i>Student Profile</h2>
+				
+            <hr>
+            <div class="row uniform">
+                <div class="12u">
+                    <form id="registerStudent">
+                        <div class="row uniform">
+                            <div class="4u 12u$(xsmall)">
+                                <h6>First Name*</h6>
+                                <input type="text" placeholder="Enter your Full Name" ng-model="student.first_name" name="first_name" pattern="^[a-zA-Z]{3,30}$" oninvalid="setCustomValidity('Only Characters Allowed with Min 3 Characters ( No Special or Spaces allowed)')"
+                                onchange="try{setCustomValidity('')}catch(e){}" required/>
+                            </div>
+                            <div class="4u 12u$(xsmall)">
+                                <h6>Middle Name</h6>
+                                <input type="text" name="middle_name" value="" ng-model="student.middle_name" placeholder="Enter your Middle Name" pattern="^[a-zA-Z]{1,30}$" oninvalid="setCustomValidity('Only Characters Allowed')"
+                                onchange="try{setCustomValidity('')}catch(e){}"/>
+                            </div>
+                            <div class="4u 12u$(xsmall)">
+                                <h6>Last Name*</h6>
+                                <input type="text" name="last_name" value="" ng-model="student.last_name" placeholder="Enter your Last Name" pattern="^[a-zA-Z]{3,30}$" oninvalid="setCustomValidity('Only Characters Allowed with Min 3 Characters ( No Special or Spaces allowed)')"
+                                onchange="try{setCustomValidity('')}catch(e){}" required/>
+                            </div>
+                            <div class="6u 12u$(xsmall)">
+                                <h6>Email*</h6>
+                                <input type="email" name="new_email" value="" ng-model="student.email" placeholder="Enter email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" value="" oninvalid="setCustomValidity('Invalid Email Address')" onchange="try{setCustomValidity('')}catch(e){}" required/>
+                            </div>
+                            <div class="6u 12u$(xsmall)">
+                                <h6>Contact (Mobile Number)*</h6>
+                                <input type="text" name="contact" value="" ng-model="student.contact" placeholder="Enter contact number" pattern="[0-9]{10}" value="" oninvalid="setCustomValidity('Invalid Contact')" onchange="try{setCustomValidity('')}catch(e){}" required/>
+                            </div>
+                        </div>
+                        <div class="row uniform">
+                            <div class="4u 12u$(xsmall)">
+                                <h6>Old Password*</h6>
+                                <input type="password" name="old_password" value="" ng-model="old_password" placeholder="Enter password" required/>
+                            </div>
+                            <div class="4u 12u$(xsmall)">
+                                <h6>Password (Minimum 8 Characters)</h6>
+                                <input type="password" name="password" value="" ng-model="password" placeholder="Enter password"/>
+                            </div>
+                            <div class="4u$ 12u$(xsmall)">
+                                <h6>Confirm Password</h6>
+                                <input type="password" name="confirm_password" ng-model="confirm_password" value="" placeholder="Confirm your password" />
+                            </div>
+                        </div>
+                        <div class="row uniform">
+                            <div class="6u 12u$(xsmall)">
+                                <div class="select-wrapper">
+                                    <h6>Gender*</h6>
+                                    <select name="gender" ng-model="student.gender" required>
+                                        <option value="">- Select Gender -</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="3u 12u$(xsmall)">
+                                <h6>Photo (.jpg file Max 300kb)</h6>
+                                <br>
+                                <input type="file" name="photo" id="photo" value="Change File" onchange="preview_image(event)">
+                            </div>
+                            <div class="3u 12u$(xsmall)">
+                                <img id="output_image" style="max-width:150px;max-height:100px;float:right;" src="images\student\{{student.student_id}}\{{student.photo}}"/>
+                            </div>
+                        </div>
+                        <div class="12u$">
+                            <br>
+                            <center>
+                                <ul class="actions">
+                                    <li>
+                                        <input type="hidden" name="credentials" value="{{cookie.credentials}}">
+                                        <input type="hidden" name="email" value="{{cookie.email}}">
+                                        <input type="hidden" name="edit_profile_student" value="true">
+                                        <input type="submit" value="Save Changes" id="registerStudent" class="button" style="color: white !important;background-color:rgb(155,0,50);"/>
+                                    </li>
+                                </ul>
+                            </center>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>

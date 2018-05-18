@@ -1,0 +1,36 @@
+{
+    "activities": [{
+        "name": "LJ Innovation Village 2016",
+        "url": "pdf/activities/LJ Innovation Village 2016.pdf"
+    }, {
+        "name": "LJ Innovation Village 2017",
+        "url": "pdf/activities/LJ Innovation Village 2017.pdf"
+    },
+	{
+        "name": "LJ Innovation Village 2018",
+        "url": "pdf/activities/LJ Innovation Village 2018.pdf"
+    }
+	],
+    "achievements": [{
+        "name": "Awards & Achievements",
+        "url": "pdf/Achievements/Awards & Achievements.pdf"
+    }, {
+        "name": "LJP Students won GYTI Award-2016 at President House, Delhi",
+        "url": "pdf/Achievements/LJP Students won GYTI Award-2016 at President House, Delhi.pdf"
+    }, {
+        "name": "MOU Signed with Ford Motor India to Train Employees of its Sanand Plant",
+        "url": "pdf/Achievements/MOU Signed with Ford Motor India to Train Employees of its Sanand Plant.pdf"
+    }, {
+        "name": "MOU signed with Suzuki Motor Gujarat to train the Employees of Mehsana",
+        "url": "pdf/Achievements/MOU signed with Suzuki Motor Gujarat to train the Employees of Mehsana.pdf"
+    }, {
+        "name": "MOU Signed with Toyota Motor for its SA T-TEP",
+        "url": "pdf/Achievements/MOU Signed with Toyota Motor for its SA T-TEP.pdf"
+    },{
+        "name":"Report-Awards and Recognition",
+        "url":"pdf/Achievements/Report-Awards and Recognition.pdf"
+    },{
+        "name":"Report-Startups Incubated at LJKF",
+        "url":"pdf/Achievements/Report-Startups Incubated at LJKF.pdf"
+    }]
+}

@@ -1,0 +1,92 @@
+<div class="row uniform" class="header-margin-double">
+	<div class="8u -2u 12u(xsmall)">
+    <div class="row uniform">
+
+    <div class="2u 12u(medium) 12u(small) 12u(xsmall)">
+        <br>
+        <table style="margin-top:0.2em;" id="menu-table">
+
+            <tr>
+                <td>
+                    <a href="" ng-click="reports_toggle()" class="links" style="color:rgb(155,0,50);">Achievements</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="" ng-click="act_toggle()" class="links" style="color:rgb(155,0,50);">Activities</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="10u 12u(medium) 12u(small) 12u(xsmall)" style="border-left:1px solid lightgrey;border-right:1px solid lightgrey;">
+        <br>
+        <span ng-hide="reports_page">
+            <h2 style="color: rgb(155,0,50);margin-left:2em;">
+                <i class="material-icons">cake</i> Achievements</h2>
+            <hr>
+            <div class="row uniform">
+                <div class="10u -1u 12u$(xsmall)">
+                    <table class="table-wrapper">
+                        <thead>
+                            <tr>
+                                <th>
+                                    No.
+                                </th>
+                                <th>
+                                    File Name (Click to View file)
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="ele in achievements">
+                                <td>
+                                    {{$index+1}}.
+                                </td>
+                                <td>
+                                    
+                                        <a href="{{ele.url}}" target="_BLANK">{{ele.name}}</a>
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </span>
+        <span ng-hide="act_page">
+            <h2 style="color: rgb(155,0,50);margin-left:2em;">
+                <i class="material-icons">golf_course</i> Activities</h2>
+            <hr>
+            <div class="row uniform">
+                <div class="10u -1u 12u$(xsmall)">
+                    <table class="table-wrapper">
+                        <thead>
+                            <tr>
+                                <th>
+                                    No.
+                                </th>
+                                <th>
+                                    File Name (Click to View file)
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="ele in activities">
+                                <td>
+                                    {{$index+1}}.
+                                </td>
+                                <td>
+                                    
+                                        <a href="{{ele.url}}" target="_BLANK">{{ele.name}}</a>
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </span>
+   </div>
+      </div>
+    </div>
+</div>

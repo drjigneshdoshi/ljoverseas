@@ -1,0 +1,156 @@
+<section class="wrapper header-margin-double" style="padding-top: 0px !important;">
+    <div class="inner">
+        <br>
+        <h2>
+            <i class="material-icons">account_circle</i> Register Student</h2>
+        <hr>
+        <div class="row uniform">
+            <div class="12u">
+			
+                <form id="registerStudent">
+						
+                    <div class="row uniform">
+                        <div class="4u 12u$(xsmall)">
+                            <h6>First Name*</h6>
+                            <input type="text" maxlength="32" placeholder="Enter your First Name" name="first_name" pattern="^[a-zA-Z]{3,30}$" oninvalid="setCustomValidity('Only Characters Allowed with Min 3 Characters ( No Special or Spaces allowed)')"
+                            onchange="try{setCustomValidity('')}catch(e){}" required/>
+                        </div>
+                        <div class="4u 12u$(xsmall)">
+                            <h6>Middle Name</h6>
+                            <input type="text" pattern="^[a-zA-Z]{1,30}$" name="middle_name" value="" placeholder="Enter your Middle Name" oninvalid="setCustomValidity('Only Characters Allowed')"
+                            onchange="try{setCustomValidity('')}catch(e){}"/>
+                        </div>
+                        <div class="4u 12u$(xsmall)">
+                            <h6>Last Name*</h6>
+                            <input type="text" pattern="^[a-zA-Z]{3,30}$" name="last_name" value="" placeholder="Enter your Last Name" oninvalid="setCustomValidity('Only Characters Allowed with Min 3 Characters ( No Special or Spaces allowed)')"
+                            onchange="try{setCustomValidity('')}catch(e){}" required/>
+                        </div>
+						<div class="4u 12u$(xsmall)">
+                            <h6>Enrollment Number*</h6>
+                            <input type="text" name="enrlid" value="" placeholder="Enter enrollment Number" pattern="[0-9]{10}" value="" oninvalid="setCustomValidity('Invalid Contact')" onchange="try{setCustomValidity('')}catch(e){}" required/>
+                        </div>
+                        <div class="4u 12u$(xsmall)">
+                            <h6>Email*</h6>
+                            <input type="email" name="email" placeholder="Enter email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" value="" oninvalid="setCustomValidity('Invalid Email Address')" onchange="try{setCustomValidity('')}catch(e){}" required/>
+                        </div>
+                        <div class="4u 12u$(xsmall)">
+                            <h6>Contact (Mobile Number)*</h6>
+                            <input type="text" name="contact" value="" placeholder="Enter contact number" pattern="[0-9]{10}" value="" oninvalid="setCustomValidity('Invalid Contact')" onchange="try{setCustomValidity('')}catch(e){}" required/>
+                        </div>
+						
+						
+                    </div>
+					<div class="12u 12u$(xsmall)">
+                            <h6>Residance Address*</h6>
+                            <input type="text" pattern="^[a-zA-Z\s]{3,100}$" name="resi_address" value="" placeholder="Enter your Address" oninvalid="setCustomValidity('Only Characters Allowed with Min 3 Characters ( No Special or Spaces allowed)')"
+                            onchange="try{setCustomValidity('')}catch(e){}" required/>
+                    </div>
+					<div class="row uniform">
+                    
+					<div class="4u 12u$(xsmall)">
+                            <h6>State*</h6>
+                            <select id="state" onchange="displayCities(this.value)" name="resi_state" class="browser-default" required>
+                            </select>
+                    </div>
+                    <div class="4u 12u$(xsmall)">
+                            <h6>City*</h6>
+                            <select name="resi_city" id="cities" class="browser-default" required>
+                                <option disabled selected>Select City</option>
+                            </select>
+                    </div>					
+					<div class="4u 12u$(xsmall)">
+                            <h6>Pin*</h6>
+							<input type="text" name="resi_pin" value="" placeholder="Enter Pincode number" pattern="[0-9]{6}" value="" oninvalid="setCustomValidity('Invalid Pin')" onchange="try{setCustomValidity('')}catch(e){}" required/>      
+							</div>
+                    </div>
+					<div class="row uniform">
+						<div class="4u 12u$(xsmall)">
+						    <h6>Institute Code*</h6>
+                            <select name="inst_id" class="browser-default" required>
+                                <option value="" disabled selected>Select Institute</option>
+                                <option ng-repeat="institute in institutes" value="{{institute.inst_id}}">
+                                    {{institute.inst_name}}
+                                </option>
+                            </select>
+						</div>
+						<div class="4u 12u$(xsmall)">
+						    <h6>Branch Code*</h6>
+                            <select name="branch_id" class="browser-default" required>
+                                <option value="" disabled selected>Select Branch</option>
+                                <option ng-repeat="branch in branches" value="{{branch.branch_id}}">
+                                    {{branch.branch_name}}
+                                </option>
+                            </select>
+						</div>
+						<div class="4u 12u$(xsmall)">       
+								<div class="select-wrapper">
+                                <h6>Gender*</h6>
+                                <select name="gender" required>
+                                    <option value="" selected disabled>- Select Gender -</option>
+                                    <option value="Male" selected>Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                            </div>
+                    		
+						
+                    </div>
+                    <div class="row uniform">
+						<div class="6u 12u$(xsmall)">
+                            <h6>Password* (Minimum 8 Characters)</h6>
+                            <input type="password" name="password" ng-model="register_password" placeholder="Enter password" required/>
+                        </div>
+                        <div class="6u 12u$(xsmall)">
+                            <h6>Confirm Password*</h6>
+                            <input type="password" name="confirm_password" ng-model="confirm_password"  placeholder="Confirm your password" required/>
+                        </div>
+					</div>
+					<div class="row uniform">
+						
+                        <div class="6u 12u$(xsmall)">
+                            <h6>Photo* (.jpg file Max 300kb)</h6>
+							</BR>
+                            <input type="file" name="photo" id="photo" onchange="preview_image(event)" required>
+                        </div>
+
+                        <div class="6u 12u$(xsmall)">
+                            <img id="output_image" style="max-width:150px;max-height:100px;float:right;" />
+                        </div>
+                    </div>
+                    <div class="12u$">
+                        <br>
+                        <center>
+                            <ul class="actions">
+                                <li>
+                                    <input type="hidden" name="register_student" value="true">
+                                    <input type="submit" value="Register" id="registerStudent1" class="button" style="color: white !important;background-color:rgb(155,0,50);"/>
+                                </li>
+                            </ul>
+                        </center>
+                    </div> 
+					
+				
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<script type="text/javascript">
+    var jsonData;
+    $.getJSON("assets/json/states.json", function (data) {
+        jsonData = data;
+        var str = "<option value='' disabled selected>Select State</option>";
+        $.each(Object.keys(data), function (key, value) {
+            str += "<option value='" + value + "'>" + value + "</option>";
+        });
+        $("#state").html(str + "</select>");
+    });
+
+    function displayCities(state) {
+        var str = "<option value='' disabled selected>Select Cities</option>";
+        $.each(jsonData[state], function (key, value) {
+            str += "<option value='" + value + "'>" + value + "</option>";
+        });
+        $("#cities").html(str + "</select>");
+    }
+</script>

@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<!--
+    Intensify by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html ng-app="RoutesModule">
+
+<head>
+    <title>LJ Overseas</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/print.css" media="print" />
+    <link rel="stylesheet" href="assets/vendor/css/main.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/vendor/css/toast.css" />
+    <link rel="stylesheet" href="assets/vendor/css/slider.css" />
+    <!-- <link rel="stylesheet" href="assets/vendor/css/loading_img.css" /> -->
+    <link rel="stylesheet" href="assets/vendor/css/toastr.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:700" rel="stylesheet">
+    <link rel- "shortcut icon" href="images/l j innovation village   logo_final.png">
+    <link rel="stylesheet" href="assets/css/shape_circle.css" />
+</head>
+
+<body ng-controller="homeLinks">
+    <header id="header" style="background-color:#F0F8FF;">
+        <div class="row uniform">
+            <div class="8u -2u 12u$(xsmall)">
+                <nav id="slide-menu">
+                    <a href="#menu" style="color:rgb(155,0,50);float:left;">
+                        <span>Menu</span>
+                    </a>
+                </nav>
+                <div class="row uniform">
+                    <div class="10u 12u(xsmall)">
+                        <span class="logo left" style="height:4em !important;float:left !important;">
+                            <img src="images/ljoverseas_logo.png" class="logo-img-1" />
+                        </span>
+                        <!-- <span class="logo left" style="height:4em !important;float:left !important;">
+                    <img src="images/ljoverseas_logo.png" class="logo-img-2" />
+                </span> -->
+                    </div>
+                    <div class="2u 12u(xsmall) logo-3">
+                        <span class="logo left" style="height:4em !important;float:right !important;">
+                            <img src="images/LJK-logo.png" style="height:2em !important;" class="logo-img-3" />
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <header id="header1" style="background-color:#F0F8FF;box-shadow:0px 2px 1px 0px lightgrey;height:3.5em !important;line-height:3.5em !important;">
+            <!-- <div class="row uniform">
+                    <div class="8u -2u 12u(xsmall)" style="height:85px;"> -->
+                <nav>
+                    <ul id="links-list" data-ng-include="path">
+                    </ul>
+                </nav>
+                    <!-- </div>
+                </div> -->
+    </header>
+    <nav id="menu" style="background-color:#F0F8FF;float:right;">
+        <ul class="links" data-ng-include="path">
+        </ul>
+    </nav>
+    <ng-view></ng-view>
+    <BR>
+    <!-- Footer -->
+    <!-- <footer id="footer" style="background:white;position:fixed;bottom:0;width:100%;">
+        <div class="copyright">
+
+            <br>
+            <h4 style="color: rgb(155,0,50);"> &copy; Copyrights LJ Knowledge Foundation.</h4>
+        </div>
+        </div>
+        </div>
+    </footer> -->
+    
+    <div style="width:100%;bottom:0;background-color:#F0F8FF;position:fixed;" id="footer">
+            <center>
+                <h4 style="color: rgb(155,0,50);"> Developed and Maintained by LJMCA Software Factory; &copy; Copyrights Lok Jagruti Kendra.</h4>
+            </center>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/vendor/js/jquery-2.1.1.min.js"></script>
+    <script src="assets/vendor/js/lodash.min.js"></script>
+    <script src="assets/vendor/js/jquery.scrolly.min.js"></script>
+    <script src="assets/vendor/js/skel.min.js"></script>
+    <script src="assets/vendor/js/util.js"></script>
+    <script src="assets/vendor/js/main.js"></script>
+    <script src="assets/vendor/js/script.js"></script>
+    <script src="assets/vendor/js/angular.js"></script>
+    <script src="assets/vendor/js/toastr.js"></script>
+    <script src="assets/vendor/js/angular-cookies.js"></script>
+    <script src="assets/vendor/js/angular-route.js"></script>
+    <!-- <script src="assets/vendor/js/EzFade.js"></script> -->
+    <script src="assets/js/mainScript.js"></script>
+    <script src="assets/js/angularServices.js"></script>
+    <script src="https://cdn.plot.ly/plotly-1.2.0.min.js"></script>
+    <script type='text/javascript'>
+        function export_data(element) {
+            var data_type = 'data:application/vnd.ms-excel';
+            var table_div = document.getElementById(element);
+            var table_html = table_div.outerHTML.replace(/ /g, '%20');
+
+            var a = document.createElement('a');
+            a.href = data_type + ', ' + table_html;
+            a.download = 'LJ_Innovation_Village_Report' + Math.floor((Math.random() * 9999999) + 1000000) + '.xls';
+            a.click();
+        }
+
+	 
+		$('#pdf').bind('change',function(){
+			if(this.files[0].size > 2097152)
+			{
+					 toastr.error("File size is more than 2MB!");
+			}
+
+		});
+       /* function preview_image1(event) {
+		   alert("ín side preview");
+            var reader = new FileReader();
+			$('#photo').bind('change',function(){
+			var f_value =  this.files[0].value;
+			alert(f_value);
+           
+			var extension =f_value.substring(f_value.lastIndexOf('.') + 1).toLowerCase();
+			if ( extension != "jpeg" && extension != "jpg") {
+			      toastr.error(" JD File extension must be jpg or jpeg");
+			}
+			
+			if(this.files[0].size > 307200)
+			{
+					 toastr.error("File size is more than 300K!");
+			}
+
+		}}
+		); 
+          reader.onload = function () {
+                var output = document.getElementById('output_image');
+                output.src = reader.result;
+            }
+            reader.readAsDataURL(event.target.files[0]);
+        }
+		*/
+		
+		function preview_image(event) {
+		    var reader = new FileReader();
+						
+            if(event.target.files[0].size>307200){
+                var output = document.getElementById('output_image');
+                var img_input = document.getElementById('photo');
+                
+                output.src = "";
+                img_input.value = "";
+
+                toastr.error("File cannot be > 300kb");
+            }
+            else if(event.target.files[0].type!="image/jpeg" && event.target.files[0].type!="image/JPEG" && event.target.files[0].type!="image/JPG" && event.target.files[0].type!="image/jpg"){
+                var output = document.getElementById('output_image');
+                var img_input = document.getElementById('photo');
+                
+                output.src = "";
+                img_input.value = "";
+                toastr.error("Only JPG, JPEG files are allowed.");
+            }
+			else {
+                reader.onload = function () {
+                    var output = document.getElementById('output_image');
+                    output.src = reader.result;
+                }
+                reader.readAsDataURL(event.target.files[0]);
+            }
+        }
+		
+		function preview_report(event) {
+		   var reader = new FileReader();
+            if(event.target.files[0].size>2097152){
+                var report_pdf = document.getElementById('report_pdf');
+                report_pdf.value = "";
+
+                toastr.error("File cannot be > 2MB");
+            }
+            else   if(event.target.files[0].type!="application/pdf" && event.target.files[0].type!="application/PDF"){
+                var report_pdf = document.getElementById('report_pdf');
+                report_pdf.value = "";
+                toastr.error("Only pdf is allowed.");
+            }
+			
+        }
+        $(window).on('hashchange', function (e) {
+            $(window).scrollTop(0);
+        });
+    </script>
+</body>
+
+</html>

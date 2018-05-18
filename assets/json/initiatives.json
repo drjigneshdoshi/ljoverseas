@@ -1,0 +1,105 @@
+{
+    "data": [{
+        "id":1,
+        "title":"Project To Product",
+        "summary": "LJ campus has systematically developed innovation processes through which all of the 2000 engineering and polytechnic students are working on real life challenges from market, industry and society in the market. ",
+        "url": "#/Initiatives/ProjectToProduct"
+    },
+    {
+        "id":2,
+        "title":"Antrapreneur: The Business Incubator",
+        "summary": "India is a young nation with vast pool of young students across universities. Given a platform these young students can turn to innovate and solve challenges of the country.",
+        "url": "#/Initiatives/Antrapreneur"
+    },
+    {
+        "id":3,
+        "title":"Antracon : The Fund Raising Event",
+        "summary": "LJ knowledge foundation brought 20 national angel Syndicates and more than 100 angel investors to fund innovative Start-ups in Gujarat at ANTRACON 2016.",
+        "url": "#/Initiatives/Antracon"
+    },
+	{
+        "id":4,
+        "title":"LJ Women Entrepreneurship Development Programme (LJWEDP)",
+        "summary": "It is an title by LJK Foundation in order to bring up the entrepreneurial potential of women. This is a five week workshop, with an aim of supporting and developing the skills of women and giving them equal opportunities in the field of entrepreneurship.",
+        "url": "#/Initiatives/LJWomenEntrepreneurship"
+    },
+	{
+        "id":5,
+        "title":"Startup Gujarat, Standup Gujarat",
+        "summary": "LJ Knowledge Foundation launched the Startup campaign “Startup Gujarat Standup Gujarat” on 26/09/205, and also felicitated major stakeholders of the Gujarat Ecosystem",
+        "url": "#/Initiatives/StartupGujaratStandupGujarat"
+    },
+	{
+        "id":6,
+        "title":"Startup Week 24x7",
+        "summary": "LJ Start-up week is a week-long hands-on experience training program where student innovators/entrepreneurs put their entrepreneurial skills to test and launch their start- ups based on their innovative projects.",
+        "url": "#/Initiatives/StartupWeek"
+    },
+	{
+        "id":7,
+        "title":"LJ Business Catalyst",
+        "summary": "Over 1000 students study in streams of management across programs like BBA/MBA/5 year integrated MBA programs at LJ campus.",
+        "url": "#/Initiatives/LJBusinessCatalyst"
+    },
+	{
+        "id":8,
+        "title":"Skill Development & Corporate Training",
+        "summary": "LJ Group of Institutes has signed MOU with Ford Motor India to train the Employees of its SVAEP (Sanand Vehicle Assembly & Engine Plant).",
+        "url": "#/Initiatives/SkillDevelopment"
+    },	
+	{
+        "id":9,
+        "title":"LJ Centre of Excellence",
+        "summary": "It has been started with the aim to increase the experimentation facilities available to the students. It cultivates students to be highly creative, & sensitive in the field of development",
+        "url": "#/Initiatives/LJCenterOfExcellence"
+    },	
+	{
+        "id":10,
+        "title":"LJ Design Centre",
+        "summary": "Designing Skill is an ability acquired through deliberate, systematic, and sustained effort to smoothly and adaptively carryout complex activities or job functions involving ideas (cognitive skills),",
+        "url": "#/Initiatives/LJDesignCenter"
+    },
+	{
+        "id":11,
+        "title":"EDX/COURSERA MOOC Club",
+        "summary": "As all are aware, this era is known as “The Information Age. It is a period in human history characterized by the shift from traditional industry that the",
+        "url": "#/Initiatives/EDXCourseAraMocClub"
+    },
+    {
+        "id":12,
+        "title":"CRADLE",
+        "summary": "CRADLE (Capability Recognition And Development Lessons for Entrepreneurship) is a unique title of its kind through which CEOs of reputed industries and start-ups are invited to interact with LJ campus students. ",
+        "url": "#/Initiatives/Cradle"
+    },
+    {
+        "id":13,
+        "title":"Hackathon",
+        "summary": "The word, hackathon, is a synthesis of the words ‘hack’ and ‘marathon’, where ‘hack’ is used in the sense of exploratory programming.",
+        "url": "#/Initiatives/Hackathon"
+    },
+	{
+        "id":14,
+        "title":"LJ Sahyog",
+        "summary": "LJ Sahyog is an title taken by LJ Group of Institutes to encourage Village Computer Entrepreneurship (VCE) by conducting workshop for website making and social media awareness",
+        "url": "#/Initiatives/LJSahyog"
+    },
+	{
+        "id":15,
+        "title":"L.J. Arogya Kendra",
+        "summary": "Through LJ Aarogya Kendra we have developed an innovative practice where a team of doctor and support staffs delivers health care services through mobile van in key slum area of the city.",
+        "url": "#/Initiatives/LJArogyaKendra"
+    },
+	{
+        "id":16,
+        "title":"Laws on Wheels",
+        "summary": "This is designed to serve twin purposes: social as well as academic. Under this the students will go to interior villages for creating legal awareness and to know the social reality",
+        "url": "#/Initiatives/LawsOnWheels"
+    },
+		{
+        "id":17,
+        "title":"Prayas",
+        "summary": "Started with the objective of inculcating Institutional Social Responsibility (ISR) among students to promote Institution- neighbourhood community network involving students and faculty.",
+        "url": "#/Initiatives/Prayas"
+    }
+	]
+}

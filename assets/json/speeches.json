@@ -1,0 +1,43 @@
+{
+    "data": [{
+        "id":1,
+        "person":"Prof. Anil K Gupta, Padma Shri, Founder of Honey Bee  Network",
+        "summary": "I cordially appreciate the efforts of LJ Innovation Village for inviting students who do not work on only “Proof of Concepts” but on “Actual Products” as well as efforts,  ",
+		"speech":"I cordially appreciate the efforts of LJ Innovation Village for inviting students who do not work on only “Proof of Concepts” but on “Actual Products” as well as efforts, which could successfully attract the talents nationwide including contributors from nation’s best Institutions including IITs. I take immense pride in the activity of LJK to successfully invite the best geniuses of the nation to LJ Innovation Village. However, now the challenge before us is to cope with the practice of working solo and stress on group or collaborative working mechanism. Hence, first of all, come together and discuss how different startups would be helpful to each other. E.g. how software engineers would help to hardware studentsto learn how to communicate using softwares. By doing this, our country would regain its strength and our city will become “Ahmedabad Valley” like “Silicon Valley”. So, I emphasize the power of cooperation and synergy.In addition to this, I would also like touphold the efforts from school students who came up to compete with the students of colleges like IIT and others with their innovative ideas. I congratulate them with the bottom of my heart and invite them to ourShristi Lab. If school students can explore rigorously the various options for the problem at the hand and suggest innovative ideas to solve them, we would definitely solve many problems of our society. Hence, I request LJK trust to form a new section comprising mentors from academia and industry, which solely work with the nurturing of ideas from the school students. Recently in December, we organized a BIIS (Biotech Innovation Ignition School)in collaboration with LJK TRUST in which experts from various disciplines came and gave speeches, we should promote such practices. I also encourage the efforts of LJK to start “THE HONEYBEE INNOVATION CLUB”. This club performs four important duties – 1. Spread Innovation 2. Search Innovation. 3. Celebrate innovation. 4. Sense the unmet needs. I encourage students to spread the vision of LJK to help the society by meeting the unmet needs of the various sections. Students should identify the problems (unmet needs) in the fields of health, education, small scale industries, and final years’ students should work on them to provide innovative solutions and by that students can also get the best recognition like GYATI award from the hands of the honorable President of India. I am very happy to witness the energy of the participants and I would like to congratulate you all once again. To conclude my session I would like to give 4 recommendations to the students: 1)First step to succeed in our life is Curiosity(Utsukta), 2) Curiosity will lead to enthusiasm (Utsah), 3) Enthusiasm will generate Energy(Urja). You will never get tired, 4) This Energy will lead to Happiness(Ulhaas). Thank you all.",
+        "photo_url": "images/AnilSirPic.jpg",
+        "url": "#Speeches/1"
+		},{
+        "id":2,
+        "person":"Dr Navin Sheth [Honourable Vice Chanceller, GTU]",
+        "summary": "I deeply admire the efforts of LJ Innovation Village for inviting the nationwide student talents.I would like to draw your attention towards the point that our modern education system,",
+		"speech":"I deeply admire the efforts of LJ Innovation Village for inviting the nation wide student talents.I would like to draw your attention towards the point that our modern education system, from the beginning, emphasize on the myth that India is an agricultural state and we do not have any prowess in science and technology. On the contrary, the western counties’ students take pride on their rich legacy of technological advancements. But in reality, we must admit that we failed to educate our students to leverage the innovational edge which we have inherited from our ancestors, be it in the field of meteorology, architecture, chemistry, physics, and so on. So, our modern students do not feel proud about our reach national achievements and admire the successes of other countries. This is the main reason behind the brain drain. However, the efforts like LJ Innovation Village would surely infuse the vibrant energy to our young minds. Definitely, efforts like this would ignite the spark among the students which will drive the students to achieve the dream of Shri Swami Vivekananda to reestablish our nation on the position of world guru. Hence, I believe the programs like thesewill be considered as the nation changer, nation builder. Thank you all.",
+        "photo_url": "images/VCSirPic.jpg",
+        "url": "#Speeches/2"
+		},
+	    {	
+        "id":3,
+        "person":"Smt. Anandiben Patel [Honourable Chief Minister Gujarat]",
+        "summary": "I think that first time in the history after the formation of Gujarat as a state, any college has organized such programme of Innovation. ",
+        "speech":"I think that first time in the history after the formation of Gujarat as a state, any college has organized such programme of Innovation. Why I say this because in my 30 years of whole career as a teacher and then after 10 years of period being a minister of education I have never seen such a programme (innovation) which has been conducted either by government or any other organization. I can tell you that if I have not come here I would have missed something (important), so we can say here that not only you have shown your strength and capability but also increased my strength and capability. Now I can say that the young generation of Gujarat can show their potential in the world. The way the models have been made the meticulous details have been considered in the projects and models is really a wonderful thing and all this has been done successfully. Although some of the models like chair for the disabled peoples are already in the market yet when the student observe such problems of the disabled, understand it, make efforts to create a solution for it and helps the disabled persons in their mundane. I congratulate all of you for making such innovation like the small tractor you have made which is very useful contrary to the big tractors being used in farms generally. Such innovative ideas can come to young generation. Now you should think that how these projects can be commercialized, so that they can be useful to the common people. I myself was born in a village was brought up over there, studied there with all responsibility of doing daily cores and then have reached to this stage. So now you all can understand that how important it is to experience a village. I would congratulate Management of LJ Group of Institutes for such a wonderful initiative that they have taken today and the marvelous work that they have been doing in this field since last 3-4years. Let's try to make this country and the world more beautiful.",
+        "photo_url": "images/10-anandiben-patel.jpg",
+        "url": "#Speeches/3"
+    },
+    
+    {
+        "id":4,
+        "person":"Prof B M Pirzada [President - LJ Group of Institutes]",
+        "summary": "Professional education substantially enhances the productivity of the recipient of this education. So its cost, which is investment – in- self, should be naturally born by the recipient.",
+        "speech":"Professional education substantially enhances the productivity of the recipient of this education. So its cost, which is investment – in- self, should be naturally born by the recipient.",
+        "photo_url": "images/pirzada-sir.jpg",
+        "url": "#/About/PresidentMessage"
+    },
+	{
+        "id":5,
+        "person":"Dr. Manish Shah [Vice President - LJ Group of Institutes]",
+        "summary": "India is a young nation with vast pool of young students across universities. Given a platform these young students can turn to innovate and solve challenges of the country.",
+        "speech":"India is a young nation with vast pool of young students across universities. Given a platform these young students can turn to innovate and solve challenges of the country.",
+        "photo_url": "images/manish-sir.jpg",
+        "url": "#/About/VPMessage"
+    }
+	]
+}

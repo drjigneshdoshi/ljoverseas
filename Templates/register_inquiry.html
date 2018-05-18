@@ -1,0 +1,87 @@
+<section class="wrapper header-margin-double" style="padding-top: 0px !important;">
+    <div class="inner">
+        <br>
+        <h2>
+            <i class="material-icons">account_circle</i> Inquiry Form </h2>
+        <hr>
+        <div class="row uniform">
+            <div class="12u">
+			
+                <form id="inquiry">
+						
+                    <div class="row uniform">
+                        <div class="6u 12u$(xsmall)">
+                            <h6>Your Name*</h6>
+                            <input type="text" maxlength="32" placeholder="Enter your Name" name="name" pattern="^[a-zA-Z\s]{3,30}$" oninvalid="setCustomValidity('Only Characters Allowed with Min 3 Characters ( No Special or Spaces allowed)')"
+                            onchange="try{setCustomValidity('')}catch(e){}" required/>
+                        </div>
+					
+                        <div class="6u 12u$(xsmall)">
+                            <h6>Email*</h6>
+                            <input type="email" name="email" placeholder="Enter email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" value="" oninvalid="setCustomValidity('Invalid Email Address')" onchange="try{setCustomValidity('')}catch(e){}" required/>
+                        </div>
+					</div>
+					<div class="row uniform">
+                                        
+						<div class="6u 12u$(xsmall)">
+                            <h6>Contact (Mobile Number)*</h6>
+                            <input type="text" name="contact" value="" placeholder="Enter contact number" pattern="[0-9]{10}" value="" oninvalid="setCustomValidity('Invalid Contact')" onchange="try{setCustomValidity('')}catch(e){}" required/>
+                        </div> 
+						<div class="6u 12u$(xsmall)">
+                            <h6>Stream (BE, ME etc. ) *</h6>
+                            <input type="text" name="stream" value="" placeholder="Enter Stream Name " pattern="^[a-zA-Z\s]{3,50}$" value="" oninvalid="setCustomValidity('Invalid Stream')" onchange="try{setCustomValidity('')}catch(e){}" required/>
+                        </div>
+                    </div>
+                    <div class="row uniform">
+                        <div class="12u 12u$(xsmall)">
+                            <h6>Inquiry Objective (*) </h6>
+                            <input type="text" name="inquiry_purpose" ng-model="inquiry_purpose" placeholder="Purpose of Inquiry " required/>
+                        </div>
+                    </div>
+                    <div class="row uniform">
+
+                        <div class="12u 12u$(xsmall)">
+                            <h6>Inquiry Description(*) </h6>
+                            <input type="text" name="inquiry_desc" ng-model="inquiry_desc"  placeholder=" Explain your inquiry in detail " required/>
+                        </div>
+                    </div>
+                    <!-- <div class="row uniform">
+                        <div class="6u 12u$(xsmall)">
+                            <div class="select-wrapper">
+                                <h6>Gender*</h6>
+                                <select name="gender" required>
+                                    <option value="" selected disabled>- Select Gender -</option>
+                                    <option value="Male" selected>Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="3u 12u$(xsmall)">
+                            <h6>Photo* (.jpg file Max 300kb)</h6>
+                            <br>
+                            <input type="file" name="photo" id="photo" onchange="preview_image(event)" required>
+                        </div>
+
+                        <div class="3u 12u$(xsmall)">
+                            <img id="output_image" style="max-width:150px;max-height:100px;float:right;" />
+                        </div>
+                    </div> -->
+                    <div class="12u$">
+                        <br>
+                        <center>
+                            <ul class="actions">
+                                <li>
+                                    <input type="hidden" name="inquiry" value="true">
+                                    <input type="submit" value="Place your Inquiry" id="inquiry" class="button" style="color: white !important;background-color:rgb(155,0,50);"/>
+                                </li>
+                            </ul>
+                        </center>
+                    </div> 
+					
+				
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>

@@ -1,0 +1,142 @@
+<div class="row uniform" class="header-margin-double">
+    <div class="8u -2u 12u(xsmall)">
+        <div class="row uniform">
+            <div class="3u 12u(medium) 12u(small) 12u(xsmall)">
+                <br>
+                <table style="margin-top:0.1em;" id="menu-table">
+                    <tr>
+                        <td>
+                            <details open>
+                                <summary>
+                                        <span style="color:rgb(155,0,50);font-family:'Cabin';">
+                                                <a href="#/Initiatives/ProjectToProduct">Project to Product</a> 
+                                            </span>
+                                    <!-- <a href="#/Initiatives/ProjectToProduct" class="links" style="color:rgb(155,0,50);font-weight:bold;"></a> -->
+                                </summary>
+                            </details>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <details open>
+                                    <!-- ng-click="change_html('EntrapreneurDevelopment')" -->
+                                <summary>
+                                    <span style="color:rgb(155,0,50);font-family:'Cabin';">
+                                        Entrepreneur Development
+                                    </span>
+                                </summary>
+                                <ul>
+                                    <li>
+                                        <a href="#/Initiatives/Antrapreneur" style="color:rgb(155,0,50);">Antrapreneur: The Business Incubator</a>
+                                    </li>
+                                    <li>
+                                        <a href="#/Initiatives/Antracon" style="color:rgb(155,0,50);">Antracon : The Fund Raising Event</a>
+                                    </li>
+                                    <li>
+                                        <a href="#/Initiatives/LJWomenEntrepreneurship" style="color:rgb(155,0,50);">LJ Women Entrepreneurship Development Programme (LJWEDP)</a>
+                                    </li>
+                                    <li>
+                                        <a href="#/Initiatives/StartupGujaratStandupGujarat" style="color:rgb(155,0,50);"> Startup Gujarat, Standup Gujarat</a>
+                                    </li>
+                                    <li>
+                                        <a href="#/Initiatives/StartupWeek" style="color:rgb(155,0,50);">Startup Week 24x7</a>
+                                    </li>
+                                    <li>
+                                        <a href="#/Initiatives/LJBusinessCatalyst" style="color:rgb(155,0,50);">LJ Business Catalyst</a>
+                                    </li>
+                                </ul>
+                            </details>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <details open>
+                                    <!-- ng-click="change_html('Skills')" -->
+                                <summary>
+                                    <span style="color:rgb(155,0,50);font-family:'Cabin';">
+                                        Skill Development Programmes
+                                    </span>
+                                </summary>
+                                <ul>
+                                    <li>
+                                        <a href="#/Initiatives/SkillDevelopment" style="color:rgb(155,0,50);">Skill Development & Corporate Training</a>
+                                    </li>
+                                    <li>
+                                        <a href="#/Initiatives/LJCenterOfExcellence" style="color:rgb(155,0,50);">LJ Centre of Excellence</a>
+                                    </li>
+                                    <li>
+                                        <a href="#/Initiatives/LJDesignCenter" style="color:rgb(155,0,50);">LJ Design Centre</a>
+                                    </li>
+                                    <li>
+                                        <a href="#/Initiatives/EDXCourseAraMocClub" style="color:rgb(155,0,50);">EDX/COURSERA MOOC Club</a>
+                                    </li>
+                                    <li>
+                                        <a href="#/Initiatives/Cradle" style="color:rgb(155,0,50);">CRADLE</a>
+                                    </li>
+                                    <li>
+                                        <a href="#/Initiatives/Hackathon" style="color:rgb(155,0,50);">Hackathon</a>
+                                    </li>
+                                </ul>
+                            </details>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <details open>
+                                    <!-- ng-click="change_html('CommunityOutreach')" -->
+                                <summary>
+                                    <span style="color:rgb(155,0,50);font-family:'Cabin';">
+                                            Community Outreach
+                                    </span>
+                                </summary>
+                                <ul>
+                                    <li>
+                                        <a href="#/Initiatives/LJSahyog" style="color:rgb(155,0,50);">LJ Sahyog</a>
+                                    </li>
+                                    <li>
+                                        <a href="#/Initiatives/LJArogyaKendra" style="color:rgb(155,0,50);"> LJ Arogya Kendra</a>
+                                    </li>
+                                    <li>
+                                        <a href="#/Initiatives/LawsOnWheels" style="color:rgb(155,0,50);">Laws on Wheels</a>
+                                    </li>
+                                    <li>
+                                        <a href="#/Initiatives/Prayas" style="color:rgb(155,0,50);">Prayas</a>
+                                    </li>
+                                </ul>
+                            </details>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="9u 12u(medium) 12u(small) 12u(xsmall)" style="border-left:1px solid lightgrey;border-right:1px solid lightgrey;">
+                <br>
+                <br>
+                <div class="12u 12u(xsmall)" style="min-height:300px;">
+                    <div ng-include="current_html"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<button  onclick="topFunction()" id="topButton">
+        <i class="material-icons">keyboard_arrow_up</i>
+</button>
+<script type="text/javascript">
+    // When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function () {
+			scrollFunction()
+		};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+				document.getElementById("topButton").style.display = "block";
+			} else {
+				document.getElementById("topButton").style.display = "none";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			$(window).scrollTop(0);
+		}
+</script>

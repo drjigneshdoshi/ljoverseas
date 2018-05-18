@@ -1,0 +1,208 @@
+<div class="row uniform" class="header-margin-double">
+	<div class="8u -2u 12u(xsmall)">
+		<div class="row uniform">
+			<div class="3u 12u(medium) 12u(small) 12u(xsmall)">
+
+				<br>
+				<table style="margin-top:0.2em;background-color:#F0F8FF;" id="menu-table">
+					<tr>
+						<td>
+							<a href="" ng-click="ljiv_toggle()" class="links" style="color:rgb(155,0,50);">At A Glance LJ Overseas Education</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="" ng-click="ljivr_toggle()" class="links" style="color:rgb(155,0,50);">Project Domain</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="" ng-click="ljivc_toggle()" class="links" style="color:rgb(155,0,50);">Who can Apply? </a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="" ng-click="ljiva_toggle()" class="links" style="color:rgb(155,0,50);">How to Apply?</a>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<a href="" ng-click="ljivs_toggle()" class="links" style="color:rgb(155,0,50);">Scope of innovation</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="" ng-click="ljivsp_toggle()" class="links" style="color:rgb(155,0,50);">Selection Process</a>
+						</td>
+					</tr>
+					<!-- <tr>
+						<td>
+							<a href="" ng-click="ljivec_toggle()" class="links" style="color:rgb(155,0,50);">Evaluation Criteria</a>
+						</td>
+					</tr> -->
+				</table>
+			</div>
+			<div class="9u 12u(medium) 12u(small) 12u(xsmall)" style="border-left:1px solid lightgrey;padding-right:2em;border-right:1px solid lightgrey;">
+				<br>
+
+				<span ng-hide="ljiv_page" style="padding-left:2em !important;padding-right:2em !important;">
+					<div id="justify">
+						<center>
+							<h2 style="color:rgb(155,0,50);font-weight:bold;">
+								At A Glance... LJ Innovation Village</h2>
+							<HR>
+						</center>
+						<p> LJ Innovation Village is a platform to showcase innovative projects, products, start-ups by innovators. It provides anopportunity to innovators to interact with students, faculties, industry people and investors.
+						</p>
+						<br>
+						<p>Innovation…an idea must be replicable at an economical cost and must satisfy a specific need. Innovation involves deliberate application of information, imagination and initiative in deriving greater or different values from resources, and includes all processes by which new ideas are generated and converted into useful products.Innovation & Invention are processes that look at extraordinary, new things, events and paths for the betterment of humanity. When students become creative that they will become innovators and entrepreneurs and then the innovation ecosystem can develop.
+						</p>
+						<br>
+						<p> To nurture these skills of students (youth), LJ Group of Institutes organizes LJ Innovation Village every year in January - February. It brings out hidden creativity of students, improves their skills and enhancing performance by focusing on overall innovative development. 
+						</p>
+						<br>
+						<p> LJ Innovation Village is being organized annually since 2013, more than 700 projects have been showcased by over 3000 students of Degree/Diploma Engineering, Pharmacy and MCA. More than three thousands visitors including students, professors, industry people and investors visited the event every year. 
+
+						</p>
+						<br>
+						<p>Students visit some places and look into the social problems, then find out solutions by their innovative ideas and make projects. All these projects mentored and evaluated by various Industry People. After the evaluation process, best projects have been selected for next stage (i.e. Start-up). 
+                         </p>
+						<br>
+						<p>In 2016, Start-up week has been launched and best projected were showcased. During this process, few projects have
+							been selected for product and funded by LJ Group of Institutes. Till now more than 25 Projects have been commercialized
+							as Start-up.
+						</p>
+					</div>
+				</span>
+				<span ng-hide="ljivr_page">
+
+					<div id="justify">
+						<center>
+							<h2 style="color:rgb(155,0,50);font-weight:bold;">
+								Project Domain</h2>
+							<HR>
+						</center>
+						<br>
+						<div class="12u 12u(xsmall)">
+							<div class="row uniform">
+								<div class="6u 12u(xsmall)">
+									<img src="images/ljiv/image1.jpg" alt="" width="100%">
+								</div>
+								<div class="6u 12u(xsmall)">
+									<ul style="font-size:16px;">
+										<li ng-repeat="stream in streams">{{stream.stream_name}}</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</span>
+				<span ng-hide="ljivc_page">
+					<br>
+
+					<div class="12u 12u(xsmall)">
+						<div class="row uniform">
+							<div class="6u 12u(xsmall)">
+								<img src="images/ljiv/whocanapply.jpeg" alt="" width="100%">
+							</div>
+							<div class="6u 12u(xsmall)">
+								<h5 style="font-weight:bold;">Students/Innovators/Alumni/Start-ups of any institute across India in below domains :
+								</h5>
+								<ul style="font-size:16px;">
+									<li ng-repeat="branch in branches">{{branch.branch_name}}</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</span>
+				<span ng-hide="ljiva_page">
+
+					<div id="justify" style="min-height:300px;">
+						<center>
+							<h2 style="color:rgb(155,0,50);font-weight:bold;">
+								How to Apply? </h2>
+							<HR>
+							<h3 style="color:black !important;">Registration closed!!   Project submitted users may view/Print project details.</h3>
+							<!-- <a href="#/RegisterStudent" style="color:rgb(155,0,50);">Register Here</a>   -->
+						</center>
+					</div>
+				</span>
+				<span ng-hide="ljivs_page">
+
+					<div id="justify">
+						<center>
+							<h2 style="color:rgb(155,0,50);font-weight:bold;">
+								Scope of Innovation </h2>
+							<HR>
+						</center>
+					</div>
+					<br>
+					<div class="12u 12u(xsmall)" style="min-height:300px;">
+						<div class="row uniform">
+							<div class="6u 12u(xsmall)">
+								<img src="images/ljiv/scopof innovation.jpg" alt="" width="100%">
+							</div>
+							<div class="6u 12u(xsmall)">
+								<ul style="font-size:16px;">
+									<li> Stall to Showcase Innovation </li>
+									<li> Interaction with Industrial Mentors </li>
+									<li> Awards & Recognition for Best Innovations</li>
+									<li> Financial Support for Prototyping </li>
+									<li> Start-up Grant from Nodal Institute </li>
+									<li> Incubation for Ready to Market Innovation </li>
+									<li> Potential Innovation to be Linked with Product Designers and Investors/Angel Networks </li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+				</span>
+				<span ng-hide="ljivsp_page">
+
+					<div id="justify">
+						<center>
+							<h2 style="color:rgb(155,0,50);font-weight:bold;">
+								Selection Process </h2>
+							<HR>
+						</center>
+
+					</div>
+					<br>
+					<div class="12u 12u(xsmall)" style="min-height:300px;">
+						<div class="row uniform">
+							<div class="6u 12u(xsmall)">
+								<img src="images/ljiv/selection.jpg" alt="" width="100%">
+							</div>
+							<div class="6u 12u(xsmall)">
+								<p>
+									Project Scrutiny by the Industry Mentors/Subject matter experts Based on Merit of the Innovation as mentioned in the evaluation
+									criteria. </p>
+								<h5 style="font-weight:bold;"> Selection Criteria </h5>
+								<ul style="font-size:16px;">
+									<li>Quality of Innovation/Novelty/Uniqueness</li>
+									<li>Potential Impact/Market</li>
+									<li> Technical Strength/Rigour</li>
+									<li> Team Contribution and Overall Effort</li>
+									<li>Approach of the Team to Solve the Challenge</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</span>
+				<span ng-hide="ljivec_page">
+
+					<div id="justify">
+						<center>
+							<h2 style="color:rgb(155,0,50);font-weight:bold;">
+								Evaluation Criteria </h2>
+							<HR>
+						</center>
+
+					</div>
+				</span>
+
+			</div>
+		</div>
+	</div>
+</div>

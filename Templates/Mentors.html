@@ -1,0 +1,66 @@
+<div class="row uniform" class="header-margin-double">
+	<div class="8u -2u 12u(xsmall)">
+	<div class="row uniform">
+
+    <div class="10u -1u 12u(medium) 12u(small) 12u(xsmall)">
+        <br>
+        <br>
+        <span ng-hide="mentor_page">
+            <h2 style="color: rgb(155,0,50);">
+                <i class="material-icons" style="color: rgb(155,0,50);">school</i> Mentors</h2>
+            <hr>
+            <div class="row">
+                <div class="12u  12u(medium) 12u(small) 12u(xsmall)"  >
+                    <table class="table-wrapper">
+                        <thead>
+                            <tr>
+                                <th>
+                                    No.
+                                </th>
+                                <th>
+                                        Image
+                                    </th>
+                                <th>
+                                    Mentor Name
+                                </th>
+                                <th>
+                                    Mentor Type
+                                </th>
+                                <th>
+                                    Specialization
+                                </th>
+                                <th>
+                                    Organization
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="mentor in mentors">
+                                <td>
+                                    {{$index+1}}.
+                                </td>
+                                <td>
+                                    <img ng-src="images/mentors/{{mentor.photo}}" height="40" width="40" style="border-radius:2em;">
+                                </td>
+                                <td>
+                                    {{mentor.mentor_name}}
+                                </td>
+                                <td>
+                                    {{mentor.mentor_type}}
+                                </td>
+                                <td>
+                                    {{mentor.specialization_name}}
+                                </td>
+                                <td>
+                                    {{mentor.organization_name}}
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </span>
+    </div>
+	</div>
+	</div>
+</div>
