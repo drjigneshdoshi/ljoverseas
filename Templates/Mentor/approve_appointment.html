@@ -1,0 +1,99 @@
+<div class="row uniform" class="header-margin-double">
+    <div class="8u -2u 12u(xsmall)">
+        <div class="12u 12u(medium) 12u(small) 12u(xsmall)">
+            <br>
+            <br>
+            <br>
+            <form id="allocateProject">
+                <div class="row uniform" class="header-margin-double">
+                    <div class="5u 12u$(xsmall)">
+                        <h6>Project Stream</h6>
+                        <select ng-model="selected_stream" ng-change="changeFilter()" class="browser-default">
+                            <option value="" selected>All Streams</option>
+                            <option ng-repeat="stream in streams" value="{{stream.stream_id}}">
+                                {{stream.stream_name}}
+                            </option>
+                        </select>
+                    </div>
+                    <div class="4u 12u$(xsmall)">
+                        <h6>Project Branch</h6>
+                        <select ng-model="selected_branch" ng-change="changeFilter()" class="browser-default">
+                            <option value="" selected>All Branches</option>
+                            <option ng-repeat="branch in branches" value="{{branch.branch_id}}">
+                                {{branch.branch_name}}
+                            </option>
+                        </select>
+                    </div>
+                    <!-- <div class="3u 12u$(xsmall)">
+                        <h6>Mentor</h6>
+                        <select name="mentor_id" required>
+                            <option value="" disabled selected>Select Mentor</option>
+                            <option ng-repeat="mentor in mentors " value="{{mentor.mentor_id}}">
+                                {{mentor.mentor_name}}
+                            </option>
+                        </select>
+                    </div> --> 
+                    <div class="3u 12u$(xsmall)">
+                        <br>
+                        <center style="margin-top:10px;">
+                            <input type="hidden" name="credentials" value="{{cookie.credentials}}">
+                            <input type="hidden" name="email" value="{{cookie.email}}">
+                            <input type="hidden" name="edit_problem" value="true">
+                            <input type="submit" value="Search" id="editProblem" class="button" style="color: white !important;background-color:rgb(155,0,50);"
+                            />
+                        </center>
+                    </div>
+                    <div class="12u 12u$(xsmall)">
+                        <table class="table-wrapper">
+                            <thead>
+                                <tr>
+                                    <th width="15">
+                                        <input type="checkbox" id="projects" class="groups" onChange="selectAll(this.id);" style="border:2px dotted #00f;display:block;background:#ff0000;">
+                                        <label for="projects"></label>
+                                    </th>
+                                    <th width="15">
+                                        No.
+                                    </th>
+                                    <th>
+                                        Problem Details
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="problem in problems | filter:{ problem_stream: selected_stream, problem_branch: selected_branch }:true">
+                                    <td>
+                                        <input type="checkbox" name="projects[]" id="{{problem.problem_id}}" class="projects" value="{{problem.problem_id}}">
+                                        <label for="{{problem.problem_id}}"></label>
+                                    </td>
+                                    <td>
+                                        <b>{{$index+1}}.</b>
+                                    </td>
+                                    <td>
+                                        <b>
+                                            <details style="width:100%;">
+                                                <summary>
+                                                    <b style="color:rgb(155,0,50);">
+                                                        {{problem.problem_title}}</b>
+                                                </summary>
+                                                <div id="justify">
+                                                    <p style="padding-left:1.5em;padding-right:1em;">
+                                                        {{problem.problem_abstract}}
+                                                    </p>
+                                                </div>
+                                            </details>
+                                        </b>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    function selectAll(value) {
+        $('.' + value).prop('checked', $('#' + value).is(":checked"));
+    }
+</script>

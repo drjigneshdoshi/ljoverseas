@@ -137,13 +137,13 @@ var app = angular
 				templateUrl: "Templates/Mentor/Home.html",
 				controller: "mentorHomeController"
 			})
-			.when("/Mentor/ProjectAllocated", {
-				templateUrl: "Templates/Mentor/ProjectAllocated.html",
-				controller: "mentorProjectAllocatedController"
+			.when("/Mentor/Appointment", {
+				templateUrl: "Templates/Mentor/schedule_appointment.html",
+				controller: "mentorAppointmentController"
 			})
-			.when("/Mentor/EditProblem", {
-				templateUrl: "Templates/Mentor/EditProblem.html",
-				controller: "mentorEPController"
+			.when("/Mentor/Counsel", {
+				templateUrl: "Templates/Mentor/approve_appointment.html",
+				controller: "mentorCounselController"
 			})
 			.when("/Mentor/ChangePassword", {
 				templateUrl: "Templates/change_password.html",
