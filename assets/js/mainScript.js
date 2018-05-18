@@ -173,6 +173,15 @@ var app = angular
 				templateUrl: "Templates/Student/Project.html",
 				controller: "studentProjectController"
 			})
+			.when("/Student/ViewRequest", {
+				templateUrl: "Templates/Student/view_request.html",
+				controller: "studentViewRequestController"
+			})
+			.when("/Student/AddRequest", {
+				templateUrl: "Templates/Student/add_request.html",
+				controller: "studentAddRequestController"
+			})
+
 			.when("/ErrorPage", {
 				templateUrl: "Templates/Error.html",
 				controller: "errorController"
@@ -188,6 +197,109 @@ var app = angular
 			
 			
 	})
+	
+	.controller("studentRequestController", function ($scope, $rootScope, authenticationService, myCookieService, httpService, $location) {
+		authenticationService.authAtMentorRoute();
+		$rootScope.changeLink();
+		$scope.cookie = myCookieService.getCookie();
+		var params = {
+			"get_stream_branch_data": true
+		};
+		httpService.sendRequest(
+			"GET",
+			function (response) {
+				$scope.branches = response.data.branches;
+				$scope.streams = response.data.streams;
+			},
+			function (reason) {
+				toastr.error("Error! " + reason.status + ": " + reason.statusText);
+			},
+			params
+		);
+		$("form#registerProblem").submit(function (event) {
+			//disable the default form submission
+			event.preventDefault();
+			//grab all form data  
+			var formData = new FormData($(this)[0]);
+			$.ajax({
+				url: $rootScope.url,
+				type: 'POST',
+				data: formData,
+				async: false,
+				cache: false,
+				contentType: false,
+				processData: false,
+				success: function (response) {
+					
+					var res = JSON.parse(response);
+					if (res.success == true) {
+						toastr.success("Problem Submitted successfully! ");
+						$("form#registerProblem").trigger("reset");
+						$location.path('/Mentor/Home');
+					} else
+						toastr.error("Error :" + res.error_message);
+				},
+				error: function (reason) {
+					var res = JSON.parse(reason);
+					console.log("hdh");
+					toastr.error("Error! " + reason.status + ": " + reason.statusText);
+				}
+			});
+			return false;
+		});
+	})
+	
+	.controller("studentViewRequestController", function ($scope, $rootScope, authenticationService, myCookieService, httpService, $location) {
+		authenticationService.authAtStudentRoute();
+		$rootScope.changeLink();
+		$scope.cookie = myCookieService.getCookie();
+		var params = {
+			"get_stream_branch_data": true
+		};
+		httpService.sendRequest(
+			"GET",
+			function (response) {
+				$scope.branches = response.data.branches;
+				$scope.streams = response.data.streams;
+			},
+			function (reason) {
+				toastr.error("Error! " + reason.status + ": " + reason.statusText);
+			},
+			params
+		);
+		$("form#registerProblem").submit(function (event) {
+			//disable the default form submission
+			event.preventDefault();
+			//grab all form data  
+			var formData = new FormData($(this)[0]);
+			$.ajax({
+				url: $rootScope.url,
+				type: 'POST',
+				data: formData,
+				async: false,
+				cache: false,
+				contentType: false,
+				processData: false,
+				success: function (response) {
+					
+					var res = JSON.parse(response);
+					if (res.success == true) {
+						toastr.success("Problem Submitted successfully! ");
+						$("form#registerProblem").trigger("reset");
+						$location.path('/Student/Home');
+					} else
+						toastr.error("Error :" + res.error_message);
+				},
+				error: function (reason) {
+					var res = JSON.parse(reason);
+					toastr.error("Error! " + reason.status + ": " + reason.statusText);
+				}
+			});
+			return false;
+		});
+	})
+	
+	
 	.controller("registerProblemController", function ($scope, $rootScope, authenticationService, myCookieService, httpService, $location) {
 		authenticationService.authAtMentorRoute();
 		$rootScope.changeLink();
@@ -238,6 +350,8 @@ var app = angular
 			return false;
 		});
 	})
+	
+	
 	.controller("inquiryController", function ($scope, $rootScope, authenticationService, myCookieService, httpService, $location) {
 		authenticationService.authAtHomeRoute();
 		$rootScope.changeLink();
